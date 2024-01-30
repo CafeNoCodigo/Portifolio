@@ -35,6 +35,13 @@ body{
     transform: scale(1.1);
 }
 
+h2.title{
+    color: #fff;
+    padding: 40px 4%;
+    text-align: center;
+    font-size: 30px;
+  }
+
 /* CABEÇALHO */
 header{
     padding: 20px 4%;
@@ -85,6 +92,12 @@ section.topo-do-site .flex{
     font-weight: 20;
 }
 
+.topo-do-site .txt-topo-site h1 span{
+    color: #c2ceda;
+    font-size: 35px;
+    font-weight: 20;
+}
+
 .topo-do-site .txt-topo-site span{
     color: #ffffff;
     text-decoration: none;
@@ -124,6 +137,8 @@ section.topo-do-site .flex{
 }
 
 
+
+
 /* ANIMAÇÕES */
 @keyframes flutuar{
     0%{
@@ -132,4 +147,41 @@ section.topo-do-site .flex{
     100%{
         top: 30px;
     }
+}
+
+/* ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+.especialidades .title span{
+    color: #c2ceda;
+}
+
+.especialidades .especialidades-box{
+    display: block;
+    padding: 40px 4%;
+    cursor: pointer;
+    margin: -5px 0;
+    transition: .5s;
+    border-radius: 25px;
+    /* border: 2px solid white; */
+}
+
+.especialidades .especialidades-box:hover{
+    box-shadow: 0px 0px 16px #c2ceda65;
+    transform: scale(1.06);
+}
+
+.especialidades .especialidades-box p{
+    color: #fff;
+}
+
+.especialidades .especialidades-box h3{
+    color: #c2ceda;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.especialidades .flex{
+    gap: 50px;
 }

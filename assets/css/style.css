@@ -136,9 +136,6 @@ section.topo-do-site .flex{
     animation: flutuar 2s ease-in-out alternate infinite;
 }
 
-
-
-
 /* ANIMAÇÕES */
 @keyframes flutuar{
     0%{
@@ -168,7 +165,7 @@ section.especialidades{
 }
 
 .especialidades .especialidades-box:hover{
-    box-shadow: 0px 0px 16px #c2ceda65;
+    box-shadow: 0px 0px 16px rgba(210, 105, 30, 0.631);
     transform: scale(1.06);
 }
 
@@ -183,5 +180,37 @@ section.especialidades{
 }
 
 .especialidades .flex{
+    gap: 50px;
+}
+
+/* SOBRE MIM */
+section.sobre{
+    padding: 90px 4%;
+}
+
+.sobre .sobre-box h2.title{
+   text-align: left;
+   margin: -30px 0;
+}
+
+.sobre .sobre-box h2.title span{
+    color: #c2ceda;
+}
+
+section.sobre .sobre-box img{
+    border-radius: 25px;
+}
+
+section.sobre .sobre-box p{
+    padding: 0 4%;
+    color: #fff;
+    font-weight: 10;
+    margin: 5px 0;
+    text-align: justify;
+    height: 60px;
+    width: auto;
+}
+
+section.sobre .flex{
     gap: 50px;
 }

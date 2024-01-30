@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -16,9 +16,28 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contacto button{
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color:#c2ceda;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-contacto button:hover{
+    box-shadow: 0px 0px 8px rgb(210, 105, 30);
+    transform: scale(1.1);
+}
+
 /* CABEÇALHO */
 header{
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 
 header > .interface{
@@ -35,22 +54,9 @@ header a{
 }
 
 header a:hover{
-    color: #fff;
+    color: #c2ceda;
     box-shadow:#ffffff;
-    transform: scale(1.1);
-}
-
-header .btn-contacto button{
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color:chocolate;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-header .btn-contacto button:hover{
-    box-shadow: 0px 0px 8px rgb(210, 105, 30);
+    transform: scale(1.06);
 }
 
 header  nav ul{
@@ -60,4 +66,70 @@ header  nav ul{
 header nav li{
     display: inline-block;
     padding: 0 40px;
+}
+
+/* Topo do Site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 20;
+}
+
+.topo-do-site .txt-topo-site span{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 35%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.topo-do-site .txt-topo-site span:hover{
+    color: #c2ceda;
+    transform: scale(1.5);
+}
+
+.topo-do-site .txt-topo-site h3{
+    color: #c2ceda;
+    font-size: 25px;
+    font-weight: 10;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    font-weight: 10;
+    margin: 30px 0;
+    text-align: justify;
+    height: 60px;
+    width: auto;
+}
+
+.topo-do-site .txt-topo-site a{
+    text-decoration: none;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    color: #000;
+    animation: flutuar 2s ease-in-out alternate infinite;
+}
+
+
+/* ANIMAÇÕES */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }

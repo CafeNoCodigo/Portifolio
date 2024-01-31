@@ -1,14 +1,17 @@
 /* ESTILO GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Salsa&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background-color: #1d1d1dba;
+    background-color: rgb(0, 0, 0);
     height: 100vh;
+    background-image:url(fundo.jpeg);
 }
 
 .interface{
@@ -27,12 +30,13 @@ body{
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: .5s;
+    transition: .2s;
+    font-weight: bold;
 }
 
 .btn-contacto button:hover, section.formulario .btn-form input:hover, .especialidades .especialidades-box:hover{
     box-shadow: 0px 0px 16px rgb(210, 105, 30);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 h2.title{
@@ -53,17 +57,32 @@ header > .interface{
     align-items: center;
 }
 
-header a{
-    color: #989898;
+header a.topo{
+    color: #c2c2c2;
     text-decoration: none;
     display: inline-block;
     transition: .5s;
 }
 
-header a:hover{
+header a.txt{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;  
+}
+
+header a.txt span{
     color: #c2ceda;
+}
+
+header a.topo:hover{
+    color: #c2ceda;
+    font-weight: bold;
     box-shadow:#ffffff;
     transform: scale(1.06);
+}
+
+header .logo a{
+    font-weight: bold;
 }
 
 header  nav ul{
@@ -83,45 +102,43 @@ section.topo-do-site{
 section.topo-do-site .flex{
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 120px;
 }
 
 .topo-do-site .txt-topo-site h1{
     color: #fff;
     font-size: 35px;
     font-weight: 20;
+    margin-bottom: -30px;
 }
 
 .topo-do-site .txt-topo-site h1 span{
     color: #c2ceda;
     font-size: 35px;
-    font-weight: 20;
+    font-weight: bold;
+    font-size: 90px;
 }
 
 .topo-do-site .txt-topo-site span{
-    color: #ffffff;
+    color: #c2ceda;
     text-decoration: none;
     border-radius: 35%;
     cursor: pointer;
+    font-weight: bold;
     transition: .5s;
-}
-
-.topo-do-site .txt-topo-site span:hover{
-    color: #c2ceda;
-    transform: scale(1.5);
 }
 
 .topo-do-site .txt-topo-site h3{
     color: #c2ceda;
     font-size: 25px;
-    font-weight: 10;
+    font-weight: bold;
 }
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
-    margin: 30px 0;
+    margin: 35px 0;
     text-align: justify;
-    height: 60px;
+    height: 100px;
     width: auto;
 }
 
@@ -147,7 +164,8 @@ section.topo-do-site .flex{
 
 /* ESPECIALIDADES */
 section.especialidades{
-    padding: 40px 4%;
+    padding: 30px 4%;
+    box-shadow: 0px 5px 30px #ffffff17;
 }
 .especialidades .title span{
     color: #c2ceda;
@@ -155,11 +173,16 @@ section.especialidades{
 
 .especialidades .especialidades-box{
     display: block;
-    padding: 40px 4%;
+    padding: 10px 4%;
     cursor: pointer;
     margin: -5px 0;
     transition: .5s;
     border-radius: 25px;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 48px;
+    color: #c2ceda;
 }
 
 .especialidades .especialidades-box p{
@@ -167,8 +190,8 @@ section.especialidades{
 }
 
 .especialidades .especialidades-box h3{
-    color: #c2ceda;
-    font-size: 30px;
+    color: #fff;
+    font-size: 20px;
     margin: 10px 0;
 }
 
@@ -178,15 +201,15 @@ section.especialidades{
 
 /* SOBRE MIM */
 section.sobre{
-    padding: 90px 4%;
+    padding: 80px 4%;
+    box-shadow: 0px 5px 30px #ffffff17;
 }
 
-.sobre .sobre-box h2.title{
-   text-align: left;
-   margin: -30px 0;
+.sobre .sobre-box h2{
+    color: #fff;
 }
 
-.sobre .sobre-box h2.title span{
+.sobre .sobre-box h2 span{
     color: #c2ceda;
 }
 
@@ -195,12 +218,8 @@ section.sobre .sobre-box img{
 }
 
 section.sobre .sobre-box p{
-    padding: 0 4%;
+    margin: 10px 0;
     color: #fff;
-    margin: 5px 0;
-    text-align: justify;
-    height: 60px;
-    width: auto;
 }
 
 section.sobre .flex{
@@ -213,7 +232,8 @@ section.formulario h2.title span{
 }
 
 section.formulario{
-    padding: 80px 4%;
+    padding: 50px 4%;
+    box-shadow: 0px 5px 30px #ffffff17;
 }
 
 form{
@@ -250,6 +270,7 @@ section.formulario .btn-form{
 
 section.formulario .btn-form input{
     border-radius: 20px;
+    font-weight: bold;
     width: 100px;
     margin: 0 190px;
     font-size: 20px;
@@ -258,3 +279,16 @@ section.formulario .btn-form input{
     cursor: pointer;
     transition: .5s;
 }
+
+/* Rôdape */
+footer{
+    padding: 30px 4%;  
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+/* footer .footer-line{
+    
+} */

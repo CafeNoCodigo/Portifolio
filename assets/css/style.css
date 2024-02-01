@@ -45,6 +45,10 @@ h2.title{
     font-size: 30px;
   }
 
+  h2.title span{
+    color: #05bb17;
+  }  
+
 .btn-social button{
     font-size: 20px;
     width: 50px;
@@ -74,6 +78,13 @@ h2.title{
 /* CABEÇALHO */
 header{
     padding: 20px 4%;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 99999;
 }
 
 header > .interface{
@@ -121,9 +132,13 @@ header nav li{
     padding: 0 40px;
 }
 
+header .btn-contacto button{
+    margin: -10px 0;
+}
+
 /* Topo do Site */
 section.topo-do-site{
-    padding: 40px 4%;
+    padding: 100px 4%;
 }
 
 section.topo-do-site .flex{
@@ -195,11 +210,10 @@ section.topo-do-site .flex{
 /* ESPECIALIDADES */
 section.especialidades{
     padding: 80px 4%;
-    /* box-shadow: 0px 5px 30px #00000017; */
 }
-.especialidades .title span{
+/* .especialidades .title span{
     color: #05bb17;
-}
+} */
 
 .especialidades .especialidades-box{
     display: block;
@@ -241,11 +255,6 @@ section.sobre{
     box-shadow: 0px 5px 30px #00000017;
 }
 
-.sobre .sobre-box h2{
-    color: #000;
-    font-weight: bold;
-}
-
 .sobre .sobre-box h2 span{
     color: #05bb17;
 }
@@ -265,10 +274,6 @@ section.sobre .flex{
 }
 
 /* Formulario */
-section.formulario h2.title span{
-    color: #05bb17;
-}
-
 section.formulario{
     padding: 50px 4%;
     box-shadow: 0px 5px 30px #00000017;
@@ -303,15 +308,14 @@ form input::placeholder, form textarea::placeholder{
 
 section.formulario .btn-form{
     margin-top: 20px;
-}
-   
+    text-align: center;
+}  
 
 section.formulario .btn-form input{
     font-weight: bold;
     border-radius: 20px;
     font-weight: bold;
     width: 100px;
-    margin: 0 190px;
     font-size: 20px;
     background-color:#05bb17;
     color: #000;
@@ -356,4 +360,81 @@ footer .footer-line p a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1085px) {
+
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contacto{
+         display: none; 
+    } 
+
+    h2.title{
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site{
+        margin-top: -190px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        display: none;
+    }
+
+    .topo-do-site .txt-topo-site h1{
+        font-size: 30PX;
+    }
+
+    .topo-do-site .btn-social button{
+        margin: 90px 0;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 80px 8%;
+        margin: -200px 0;
+        margin-bottom: 1px;
+        
+    }
+
+    /* SOBRE */
+    .sobre img{
+        width: 100%;
+    }
+
+    .sobre .flex{
+       flex-direction: column;
+    }
+
+    /* FORMULÁRIO */
+    section.formulario{
+        padding: 20px 4%;
+        margin-top: -100px;
+    }
+
+    /* RODAPE */
+    footer .flex{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+   
+    .btn-social{
+       text-align: center;
+    }
+
+    footer .logo-line .flex .logo a{
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    footer .footer-line{
+        padding: 5px 0px;
+        text-align: center;
+    } 
 }

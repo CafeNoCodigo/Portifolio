@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: #fffaf4;
     height: 100vh;
 }
 
@@ -33,8 +33,8 @@ body{
     font-weight: bold;
 }
 
-.btn-contacto button:hover, section.formulario .btn-form input:hover, .especialidades .especialidades-box:hover{
-    box-shadow: 0px 0px 16px rgb(210, 105, 30);
+.btn-contacto button:hover, section.formulario .btn-form input:hover, .especialidades .especialidades-box:hover, .btn-social button:hover{
+    box-shadow: 0px 0px 16px #F7941D;
     transform: scale(1.05);
 }
 
@@ -54,31 +54,23 @@ h2.title{
     width: 50px;
     height: 50px;
     background-color: #05bb17;
-    color: #fff;
+    color: #fffaf4;
     border: none;
     border-radius: 25px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin: 20px 20px 10px 0px;
     cursor: pointer;
     transition: .2s;
 }
 
 .btn-social button:hover{
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #05bb17;
-    color: chocolate;
-    border: none;
-    border-radius: 25px;
-    margin-right: 10px;
-    cursor: pointer;
-    transform: scale(1.05);
+    color: #F7941D;
 }
 
 /* CABEÇALHO */
 header{
     padding: 20px 4%;
-    background-color: #fff;
+    background-color: #ffffffb8;
     position: fixed;
     width: 100%;
     height: 70px;
@@ -94,22 +86,39 @@ header > .interface{
 }
 
 header a.topo{
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     transition: .5s;
 }
 
+
+header a.topo-lang{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F7941D;
+    transition: .3s;
+}
+
+header a.topo-lang:hover{
+    color: #F7941D;
+}
+
+header .logo a p{
+    font-weight: bold;
+}
+
 header a.txt{
-    color: #000;
+    color: #0e0a0a;
     text-decoration: none;
     font-size: 20px;  
 }
 
 header a.txt span{
-    color: #05bb17;
+    color: #F7941D;
     font-weight: bold;
+    
 }
 
 header a.topo:hover{
@@ -132,9 +141,9 @@ header nav li{
     padding: 0 40px;
 }
 
-header .btn-contacto button{
+/* header .btn-contacto button{
     margin: -10px 0;
-}
+} */
 
 /* Topo do Site */
 section.topo-do-site{
@@ -148,7 +157,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1{
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
     font-size: 35px;
     font-weight: 20;
@@ -156,8 +165,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #05bb17;
-    font-size: 35px;
+    color: #F7941D;
     font-weight: bold;
     font-size: 90px;
 }
@@ -178,7 +186,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site p{
-    color: #000;
+    color: #0e0a0a;
     margin: 35px 0;
     font-weight: bold;
     text-align: justify;
@@ -192,7 +200,7 @@ section.topo-do-site .flex{
 
 .topo-do-site .img-topo-site img{
     position: relative;
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
     animation: flutuar 2s ease-in-out alternate infinite;
 }
@@ -211,9 +219,6 @@ section.topo-do-site .flex{
 section.especialidades{
     padding: 80px 4%;
 }
-/* .especialidades .title span{
-    color: #05bb17;
-} */
 
 .especialidades .especialidades-box{
     display: block;
@@ -230,16 +235,16 @@ section.especialidades{
 }
 
 .especialidades .especialidades-box i:hover{
-    color: rgba(210, 105, 30, 0.568);
+    color: #F7941D;
 }
 
 .especialidades .especialidades-box p{
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
 }
 
 .especialidades .especialidades-box h3{
-    color: #000;
+    color: #0e0a0a;
     font-size: 20px;
     margin: 10px 0;
     font-weight: bold;
@@ -265,11 +270,74 @@ section.sobre .sobre-box img{
 
 section.sobre .sobre-box p{
     margin: 10px 0;
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
 }
 
 section.sobre .flex{
+    gap: 50px;
+}
+
+/* PROJECTOS */
+section.projectos{
+    padding: 40px 4%;
+    box-shadow: 0px 5px 30px #00000017;
+}
+
+section.projectos .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+section.projectos .btn-ver-mais button{
+    font-size: 20px;
+    background-color: #05bb17;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+section.projectos .btn-ver-mais{
+    display: flex;
+    justify-content: center;
+}
+
+section.projectos .btn-ver-mais button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #F7941D;
+}
+
+.img-projectos{
+    width: 300px;
+    height: 400px;
+    background-color: #05bb17;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-size: bold;
+    transition: 2s;
+}
+
+.img-projectos p{
+    padding: 60% 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.img-projectos p:hover{
+    opacity: 1;
+}
+
+.img-projectos:hover{
+    transform: scale(1.05);
+}
+
+section.projectos .flex{
     gap: 50px;
 }
 
@@ -303,7 +371,7 @@ form textarea{
 }
 
 form input::placeholder, form textarea::placeholder{
-    color: #000000;
+    color: #0e0a0ad2;
 }
 
 section.formulario .btn-form{
@@ -318,7 +386,7 @@ section.formulario .btn-form input{
     width: 100px;
     font-size: 20px;
     background-color:#05bb17;
-    color: #000;
+    color: #0e0a0a;
     cursor: pointer;
     transition: .5s;
 }
@@ -358,13 +426,17 @@ footer .footer-line p i{
 
 footer .footer-line p a{
     text-decoration: none;
-    color: #000;
+    color: #0e0a0a;
     font-weight: bold;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1020px) {
 
     /* CLASSES GERAIS */
+    *{
+        font-weight: bold;
+    }
+    
     .flex{
         flex-direction: column-reverse;
     }
@@ -378,6 +450,10 @@ footer .footer-line p a{
         font-size: 25px;
     }
 
+    header p{
+        color: #F7941D;
+    }
+
     /* TOPO DO SITE */
     section.topo-do-site{
         margin-top: -190px;
@@ -388,11 +464,16 @@ footer .footer-line p a{
     }
 
     .topo-do-site .txt-topo-site h1{
-        font-size: 30PX;
+        font-size: 25PX;
+        font-weight: 600;
     }
 
-    .topo-do-site .btn-social button{
+    section.topo-do-site .btn-social button{
         margin: 90px 0;
+    }
+
+    .topo-do-site .btn-social a button{
+        margin:90px 10px;
     }
 
     /* ESPECIALIDADES */
@@ -410,6 +491,21 @@ footer .footer-line p a{
 
     .sobre .flex{
        flex-direction: column;
+    }
+
+    .sobre .btn-social a button{
+        margin:50px 10px;
+    }
+
+    /* PROJECTOS */
+    section.projectos .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.projectos .btn-ver-mais{
+        padding: 90px 0;
     }
 
     /* FORMULÁRIO */
